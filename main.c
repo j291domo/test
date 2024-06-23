@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int myRoot(double x) // x の平方根を返す関数。x >= 0 ではないときエラー表示を行い exit(1) とする。 
+double myRoot(double x) // x の平方根を返す関数。x >= 0 ではないときエラー表示を行い exit(1) とする。myRootが実数を返すようにdoubleに変更
 {
   double y;//intからdoubleに変更
   if( x < 0 ){//xは0以下ではなく0未満となるように修正
