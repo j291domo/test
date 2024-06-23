@@ -2,7 +2,7 @@
 
 int myRoot(double x) // x の平方根を返す関数。x >= 0 ではないときエラー表示を行い exit(1) とする。 
 {
-  int y;
+  double y;//intからdoubleに変更
   if( x < 0 ){//xは0以下ではなく0未満となるように修正
     printf("エラー：0以上の値ではありません in myRoot()\n");//エラーの原因となる全角スペースを削除
     exit(1);
